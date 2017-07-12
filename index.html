@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <title></title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,shrink-to-fit=no">
+	    <meta content="yes" name="apple-mobile-web-app-capable">
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+	    <meta content="telephone=no" name="format-detection">
+	    <meta name="msapplication-tap-highlight" content="no">
+	    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<div class="box">
+			<img src="img/background.jpg" class="background"/>
+			<img src="img/logo.png" class="logo"/>
+			<!--注册页-->
+			<div class="userEnd" id="userEnd">
+			    <div  class="userInfo-box" >
+					<form id="userForm" >
+			        <ul class="input-form">
+			            <li>
+			                <span >姓名</span>
+			                <input   type="text" id="username" name="username" placeholder="姓名"  maxlength=10 minlength=2 required="required" />
+			            </li>
+			            <li>
+			                <span >手机</span>
+			                <input type="tel" id="phone" name="phone" placeholder="手机号" maxlength=11  required="required" />
+			            </li>
+			            <li>
+			                <span class="longspan">计划购车时间</span>
+			                <select class="longselect" name="cartime" id="cartime">
+			                    <option value="-1">选择时间</option>
+			                    <option value="0-3个月">0-3个月</option>
+			                    <option value="4-6个月">4-6个月</option>
+			                    <option value="7-12个月">7-12个月</option>
+			                    <option value="1-2年">1-2年</option>
+			                    <option value="有购车计划但没决定时间">有购车计划但没决定时间</option>
+			                    <option value="暂无购车计划">暂无购车计划</option>
+			                </select>
+			                <em class="select-icon"></em>
+			            </li>
+			            <li>
+			                <span class="longspan">感兴趣车型</span>
+							<select class="longselect" name="cartype" id="cartype">
+								<option value="-1"  >选择车型</option>
+								<option value="福特福睿斯">福特福睿斯</option>
+								<option value="全新福特福克斯">全新福特福克斯</option>
+								<option value="福特新蒙迪欧">福特新蒙迪欧</option>
+								<option value="福特新蒙迪欧智能混动版">福特新蒙迪欧智能混动版</option>
+								<option value="福特金牛座">福特金牛座</option>
+								<option value="福特翼搏">福特翼搏</option>
+								<option value="新福特翼虎">新福特翼虎</option>
+								<option value="福特锐界">福特锐界</option>
+							</select>
+			                <em class="select-icon"></em>
+			            </li>
+			            <li class="province-city">
+			                <select id="ddlProvince" name="ddlProvince" class="ddlProvince" title="省/00" >
+			                    <option value="-1">选择省份</option>
+			                </select>
+			                <em class="select-icon select-province"></em>
+			                <select id="ddlCity" name="ddlCity" class="ddlCity">
+			                    <option value="-1">选择城市</option>
+			                </select>
+			                <em class="select-icon"></em>
+			            </li>
+			            <li>
+			                <span>经销商</span>
+							<select id="agency" name="agency" >
+								<option value="-1">选择经销商</option>
+							</select>
+			                <em class="select-icon"></em>
+			            </li>
+			        </ul>
+					</form>
+			        <div class="btn-userInfo "><p class="btn-move" id="btn-userInfo" >确认提交</p ></div>
+			    </div>
+			</div>
+				
+			<!--优秀经纪人推荐-->
+			<div class="people">
+				<ul id="agencyList">
+					<li class="people-img one">
+						<img src="img/tou.png" alt="" class="head" />
+						<div class="In">
+							<p class="people-name" style="font-weight:bold">姓名： <span>陈洁</span></p>
+							<a href="tel:10086" class="telPhone"><img src="img/tel.png" alt="" class="people-tel"/></a>
+						</div><br />
+						<p style="font-weight:bold" class="jing">经销商:<span>保定市天硕汽车贸易有限公司</span></p>
+					</li>
+					
+					<li class="people-img two">
+						<a href="tel:10086" class="telPhone"><img src="img/tou.png" alt="" class="head" />
+						<div class="In">
+							<p class="people-name" style="font-weight:bold">姓名： <span>陈洁</span></p>
+							<img src="img/tel.png" alt="" class="people-tel"/>
+						</div><br />
+						
+						<p style="font-weight:bold" class="jing">经销商:<span>保定市天硕汽车贸易有限公司</span></p></a>
+						
+					</li>
+					
+					<li class="people-img three">
+						<img src="img/tou.png" alt="" class="head" />
+						<div class="In">
+							<p class="people-name" style="font-weight:bold">姓名： <span>陈洁</span></p>
+							<a href="tel:10086" class="telPhone"><img src="img/tel.png" alt="" class="people-tel"/></a>
+						</div><br />
+						
+						<p style="font-weight:bold" class="jing">经销商:<span>保定市天硕汽车贸易有限公司保定市天硕汽车贸易有限公司</span></p>
+						
+					</li>
+					
+				</ul>
+			</div>
+			
+			<!--弹框-->
+			<div class="error alertBox ">
+				<img src="img/error.png" class="alert"/>
+			</div>
+			<div class="success alertBox ">
+				<img src="img/success.png" class="alert"/>
+			</div>
+			<div class="repace alertBox">
+				<img src="img/repace.png" class="alert" alt=""/>
+			</div>
+			<div class="repaceagain alertBox">
+				<img src="img/plase.png" class="alert" alt=""/>
+			</div>
+	</div>
+	</body>
+	<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/fute_dealer.js"></script>
+	<script src="js/province.js"></script>
+    <script src="js/style.js" type="text/javascript" charset="utf-8"></script>
+	<!--<script src="https://h5php.xingyuanauto.com/weixin_serve/jssdk/js/jweixin-1.0.0.js"></script>-->
+	<!--<script src="js/wx_share_result.js"></script>-->
+</html>
